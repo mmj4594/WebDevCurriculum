@@ -1,1 +1,52 @@
 /* TODO: 자유롭게 바탕화면 시스템의 CSS를 만들어 보세요! */
+
+body {
+	background-image: url(http://cdn.wallpapersafari.com/22/50/Sp2mlo.jpg);
+}
+
+.icon {
+	width: 50px;
+	height: 70px;
+	padding: 5px;
+	position: absolute;
+}
+
+.icon img {
+	width: 40px;
+	height: 40px;
+	padding: 5px;
+}
+
+.icon p {
+	color: white;
+	text-shadow: 1px 1px 1px black;
+	text-align: center;
+	margin: 0;
+}
+
+.window {
+	width: 607px;
+	height: 465px;
+	position: absolute;
+	background-image: url("https://www.eightforums.com/attachments/general-support/55474d1419099292t-create-empty-folder-windows-8-1-like-windows-xp-empty.png");	
+
+}
+
+.window p {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+
+.window button {
+	width: 43px;
+	height: 18px;
+	position: absolute;
+	top: 0px;
+	left: 552px;
+	padding: 0;
+	background-color: transparent;
+	border: none;
+}

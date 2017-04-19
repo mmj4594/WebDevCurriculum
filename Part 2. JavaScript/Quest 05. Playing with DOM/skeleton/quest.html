@@ -31,13 +31,24 @@
 			<div class="square"></div>
 			<div class="square"></div>
 		</section>
-
+		
 		<script>
 			var row1Squares = document.querySelectorAll('.row1 .square');
 
 			for(var i = 0; i < row1Squares.length; i++) {
 				var node = row1Squares[i];
 				/* TODO: node 변수를 어떻게 조작해야 할까요? */
+				node.style.backgroundColor = 'yellow';
+				node.addEventListener('click', function() {
+
+					if(this.style.backgroundColor === 'yellow'){
+						this.style.backgroundColor = 'white';
+					}
+					else {
+						this.style.backgroundColor = 'yellow';
+					}
+				});
+
 			}
 
 			var row2Squares = document.querySelectorAll('.row2 .square');
@@ -45,7 +56,17 @@
 			for(var i = 0; i < row2Squares.length; i++) {
 				var node = row2Squares[i];
 				/* TODO: node 변수를 어떻게 조작해야 할까요? */
+				node.className = 'square enabled';
+				node.addEventListener('click', function() {
+					if(this.className === 'square enabled') {
+						this.className = 'square';
+					}
+					else {
+						this.className = 'square enabled';
+					}
+				});
 			}
+			
 		</script>
 	</body>
 </html>
