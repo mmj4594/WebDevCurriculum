@@ -12,12 +12,24 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="/static/style.css">
-		<script src="/static/notepad.js"></script>
 	</head>
 	<body>
 		<!-- TODO: 이 곳을 채워 클라이언트를 만들어 보세요 -->
-		<script>
-			var notepad = new Notepad(3);
-		</script>
+		<div class="container">
+			<div class = "col-xs-12 col-s-6 col-sm-offset-3">
+				<form action="/login" method="post">
+					<div class="form-group">
+						<label for="user_id">User ID</label>
+						<input type="text" name = "user_id" class="form-control" placeholder="ID를 입력해주세요"></input>
+					</div>
+					<div class="form-group">
+						<label for="password">Password</label>
+						<input type="password" name="password" class="form-control" placeholder="비밀번호를 입력해주세요."></input>
+					</div>
+					<button class="btn btn-default">Login</button>
+				</form>
+			</div>
+			
+		</div>
 	</body>
 </html>
